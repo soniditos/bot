@@ -1,0 +1,55 @@
+# Your Discord bot token (Found at https://discord.com/developers/applications)
+botToken: ""
+
+# Your Discord bot client ID
+clientId: ""
+
+# Your Genius API client access token (Found at https://genius.com/developers)
+geniusApiKey: ""
+
+# The colour to use for embeds sent by the bot
+embedColour: "#09E989"
+
+# Whether analytics should be sent when starting the bot
+enableAnalytics: false
+
+# Whether the bot should autocomplete search results
+# Disable this if you're experiencing Unknown Interaction errors
+enableAutocomplete: true
+
+# Settings to control the bot's player and controller
+player:
+    # Leave VC when a song ends
+    leaveOnEndDelay: "30m"
+    # Leave VC when a song is stopped
+    leaveOnStopDelay: "30m"
+    # Leave VC when the channel is empty
+    leaveOnEmptyDelay: "30m"
+    # Deafen bot while playing
+    # Off by default because it looks cleaner - the bot wont ever listen
+    # to you, but the option is here just in case you want to be sure.
+    deafenBot: false
+
+# The emojis to be used in buttons for certain embeds
+emojis:
+    stop: "⏹"
+    skip: "⏭"
+    queue: "📜"
+    pause: "⏯"
+    lyrics: "📜"
+    back: "⏮"
+
+# Useful if you're experiencing 429 errors.
+# Omit user:pass@ if your proxy does not require authentication.
+proxy:
+    enable: false
+    connectionUrl: "http://username:password@123.45.67.89:1234"
+
+# This can help to prevent against receiving 429 rate limits from YouTube.
+cookies:
+    useCustomCookie: false
+    youtubeCookie: ""
+
+# Unless you've specifically been asked by a developer to enable this,
+# you should just leave this disabled to prevent logs from being spammed.
+debug: false
